@@ -9,10 +9,6 @@ runApplication chemkinToFoam \
                constant/reactions constant/speciesThermo
 runApplication blockMesh
 runApplication setFields
-#runApplication $(getApplication)
-#runApplication decomposePar -cellDist
 runApplication detonationSprayFoam
-#runApplication reconstructPar
-#runApplication -s sample  postProcess -func sample
 
 #------------------------------------------------------------------------------
