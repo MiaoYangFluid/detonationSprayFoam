@@ -1,1 +1,0 @@
-../U/._maxwellSlipUFvPatchVectorField.C
