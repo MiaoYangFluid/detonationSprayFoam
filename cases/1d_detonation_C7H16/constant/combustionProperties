@@ -1,0 +1,49 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      combustionProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+combustionModel  laminar; //FM; //EDC_CFY; //PaSR_CFY; //PaSR; //laminar;
+
+active  true;
+
+PaSRCoeffs
+{
+    Cmix                0.147;
+    Ckappa              1.0;
+}
+
+FMCoeffs
+{
+    C                   1.0;
+    Ckappa              1.0;
+}
+
+PaSR_CFYCoeffs
+{
+    Su                 0.05;
+    alpha              24e-6;
+    Ckappa             1.0;
+}
+
+EDC_CFYCoeffs
+{
+    Su0                 0.1;
+    alpha0              24e-6;
+    Ckappa              1.0;
+}
+
+
+// ************************************************************************* //
